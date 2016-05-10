@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="LMa-sr-TRU" customClass="ShareMenuCell">
+            <rect key="frame" x="0.0" y="0.0" width="80" height="100"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="80" height="100"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_qq" translatesAutoresizingMaskIntoConstraints="NO" id="idq-jN-5YZ">
+                        <rect key="frame" x="0.0" y="0.0" width="80" height="65"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Iqf-aX-8JX">
+                        <rect key="frame" x="0.0" y="65" width="80" height="35"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="35" id="6ci-o1-NvZ"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            </view>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="idq-jN-5YZ" firstAttribute="top" secondItem="LMa-sr-TRU" secondAttribute="top" id="5Z4-9d-yVH"/>
+                <constraint firstAttribute="trailing" secondItem="idq-jN-5YZ" secondAttribute="trailing" id="C98-ME-Bls"/>
+                <constraint firstAttribute="bottom" secondItem="Iqf-aX-8JX" secondAttribute="bottom" id="XCT-lV-2OG"/>
+                <constraint firstItem="idq-jN-5YZ" firstAttribute="leading" secondItem="LMa-sr-TRU" secondAttribute="leading" id="YUM-dt-F4L"/>
+                <constraint firstItem="Iqf-aX-8JX" firstAttribute="leading" secondItem="LMa-sr-TRU" secondAttribute="leading" id="ZkE-Xm-yyB"/>
+                <constraint firstAttribute="trailing" secondItem="Iqf-aX-8JX" secondAttribute="trailing" id="fRC-2P-TFx"/>
+                <constraint firstItem="Iqf-aX-8JX" firstAttribute="top" secondItem="idq-jN-5YZ" secondAttribute="bottom" id="mma-su-Wgh"/>
+            </constraints>
+            <size key="customSize" width="78" height="92"/>
+            <connections>
+                <outlet property="iconView" destination="idq-jN-5YZ" id="EPB-Xh-Kw6"/>
+                <outlet property="titleLabel" destination="Iqf-aX-8JX" id="lb9-AV-8el"/>
+            </connections>
+            <point key="canvasLocation" x="173" y="65"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="icon_qq" width="48" height="48"/>
+    </resources>
+</document>
