@@ -15,7 +15,9 @@
 
 + (void)setShareDefaultPlatforms:(NSArray *)defaultPlatform;
 
-
+// 针对全部分享平台统一处理
 + (instancetype)share:(ShareInfo *)info inViewController:(UIViewController *)vc;
+// 针对单个分享平台处理
++ (instancetype)shareInViewController:(UIViewController *)vc platformSelectedHandle:(ShareInfo *(^)(SharePlatformType platform))handle;
 
 @end

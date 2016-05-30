@@ -187,6 +187,19 @@ static NSArray *defaultPlatform_ = nil;
     
 }
 
++ (instancetype)shareInViewController:(UIViewController *)vc platformSelectedHandle:(ShareInfo *(^)(SharePlatformType platform))handle
+{
+    return [self presentShareVcInViewController:vc withSelectedHandle:^(ShareMenuModel *model) {
+        
+        if (handle) {
+            
+            [[ShareTool shareTool] share:handle(model.platform) inPlatform:model.platform];
+            
+        }
+        
+    }];
+}
+
 + (instancetype)share:(ShareInfo*)info inViewController:(UIViewController *)vc
 {
     return [self presentShareVcInViewController:vc withSelectedHandle:^(ShareMenuModel *model) {
